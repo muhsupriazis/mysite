@@ -10,3 +10,69 @@
 * {
   font-family: sofiapro;
 }
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.toggle span {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.toggle.active span {
+  background-color: white;
+}
+
+.toggle span:nth-child(1){
+  transform: translateY(-8px);
+  width: 15px;
+  left: 13px;
+}
+
+.toggle.active span:nth-child(1){
+  transform: translateY(0px) rotate(45deg);
+  width: 25px;
+  left: 13px;
+  transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2){
+  transform: translateY(8px);
+  width: 10px;
+  left: 13px;
+}
+
+.toggle.active span:nth-child(2){
+  transform: translateY(0px) rotate(315deg);
+  width: 25px;
+  left: 13px;
+  transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3){
+  transform: translateX(60px);
+  width: 15px;
+  left: 13px;
+}
+
+.navigasi {
+  transform: translateX(-400px);
+  transition: 0.5s;
+}
+
+.navigasi.active {
+  transform: translateX(0px);
+  transition: 0.5s;
+}

@@ -1,4 +1,5 @@
 export const site = {
+    name: 'Supri Dev.',
     navigasi : [
         {
             menu: 'Home',
