@@ -8,7 +8,7 @@ export default function Layout({children, title}){
     <Head>
         <title>{title? `${site.name} | ${title}` : `${site.name}`}</title>
     </Head>
-    <header className="p-4 glass fixed top-0 w-full">
+    <header>
         <Navbar/>
     </header>
     <main className="p-4">

@@ -1,6 +1,5 @@
-import { useRouter } from "next/router"
+import Link from "next/link";
 
 export default function ButtonNavigasi({children, url}){
-    const router = useRouter()
-    return <button className="bg-black text-white p-2 rounded my-4" onClick={()=>router.push(url)}  >{children}</button>
+    return <Link className="text-xl my-5" href={url}>{children} <span>&rarr;</span></Link>
 }
