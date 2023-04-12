@@ -7,8 +7,14 @@
   src: url('sofiapro-light.otf');
 }
 
+@font-face {
+  font-family: calibre;
+  src: url('Calibre-Semibold.ttf');
+}
+
 * {
   font-family: sofiapro;
+  font-size: 1rem;
 }
 
 .toggle {
@@ -16,7 +22,6 @@
   width: 50px;
   height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
   overflow: hidden;
@@ -38,33 +43,28 @@
 .toggle span:nth-child(1){
   transform: translateY(-8px);
   width: 15px;
-  left: 13px;
 }
 
 .toggle.active span:nth-child(1){
   transform: translateY(0px) rotate(45deg);
   width: 25px;
-  left: 13px;
   transition-delay: 0.125s;
 }
 
 .toggle span:nth-child(2){
   transform: translateY(8px);
   width: 10px;
-  left: 13px;
 }
 
 .toggle.active span:nth-child(2){
   transform: translateY(0px) rotate(315deg);
   width: 25px;
-  left: 13px;
   transition-delay: 0.25s;
 }
 
 .toggle.active span:nth-child(3){
   transform: translateX(60px);
   width: 15px;
-  left: 13px;
 }
 
 .navigasi {

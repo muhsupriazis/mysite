@@ -3,7 +3,7 @@ import NextNProgress from 'nextjs-progressbar';
 
 export default function App({ Component, pageProps }) {
   return <>
-    <NextNProgress height={2} showOnShallow={false} />
+    <NextNProgress height={3} showOnShallow={false}  options={{showSpinner: false}} />
     <Component {...pageProps} />
   </>
 }
