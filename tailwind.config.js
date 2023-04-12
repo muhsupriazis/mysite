@@ -11,6 +11,9 @@ module.exports = {
   theme: {
     fontFamily: {
       calibre: ['calibre', 'sans-serif'],
+      sofiabold: ['sofiabold', 'sans-serif'],
+      sofiamedium: ['sofiamedium', 'sans-serif'],
+      covered: ['convered', 'sans-serif'],
     },
     extend: {},
   },

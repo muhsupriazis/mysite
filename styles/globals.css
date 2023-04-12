@@ -8,8 +8,31 @@
 }
 
 @font-face {
+  font-family: convered;
+  src: url('covered.ttf');
+}
+
+@font-face {
   font-family: calibre;
   src: url('Calibre-Semibold.ttf');
+}
+
+@font-face {
+  font-family: sofiabold;
+  src: url('sofiapro-extrabold.otf');
+}
+
+@font-face {
+  font-family: sofiamedium;
+  src: url('sofaipro-seminbold.otf');
+}
+
+.glass {
+  /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.62);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 * {

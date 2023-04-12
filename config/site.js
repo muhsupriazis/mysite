@@ -24,7 +24,7 @@ export const site = {
             url: '/contact'
         }
     ],
-    social: [
+    social : [
         {
             name: 'Instagram',
             url: 'https://instagram.com/muhsupriazis',
