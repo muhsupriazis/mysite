@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "./navbar";
 import { site } from "@/config/site";
 import Link from "next/link";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function Layout({children, title}){
     return <>
@@ -16,7 +17,7 @@ export default function Layout({children, title}){
     </main>
     <footer className="fixed bottom-0">
         <ul className="flex">
-            {/* {site.social.map((media, i)=> <ListItem key={i} url={media.url}>{media.icon}</ListItem>)} */}
+            {/* <li><Link href={'#'} className="w-6 text-red-500"><AiFillGithub/></Link></li> */}
         </ul>
     </footer>
     </>
