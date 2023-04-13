@@ -1,10 +1,13 @@
 import { site } from "@/config/site";
 import Link from "next/link";
 import { useState } from "react";
+import { FiInstagram, FiTwitter, FiFacebook, FiLinkedin,FiGithub } from "react-icons/fi";
 
 export default function Navbar(){
     const [isactive, setIsactive] = useState(false);
-    return <nav className="p-4 fixed w-full glass">
+    return <>
+
+    <nav className="p-4 fixed w-full glass">
         <div className="flex justify-between items-center">
             <span className="font-bold font-sofiabold text-3xl">{site.name}</span>
             <div className={isactive? 'toggle flex justify-end z-30 active' : 'flex justify-end toggle z-30'} onClick={()=>setIsactive(!isactive)}>
@@ -21,10 +24,26 @@ export default function Navbar(){
             <hr className="my-4"/>
         </div>
     </nav>
+    {!isactive && 
+    <div className="bg-amber-100 fixed w-full bottom-0 left-0">
+        <ul className="flex justify-center">
+            <ListSocial url={'#'}><FiInstagram className="text-2xl"/></ListSocial>
+            <ListSocial url={'#'}><FiTwitter className="text-2xl"/></ListSocial>
+            <ListSocial url={'#'}><FiFacebook className="text-2xl"/></ListSocial>
+            <ListSocial url={'#'}><FiLinkedin className="text-2xl"/></ListSocial>
+            <ListSocial url={'#'}><FiGithub className="text-2xl"/></ListSocial>
+        </ul>
+    </div>
+    }
+    </>
 }
 
 function ListItem({children, url}){
-    return <li className="py-1 text-lg">
+    return <li className="py-1 text-xl">
         <Link href={url}>{children}</Link>
     </li>
+}
+
+function ListSocial({children, url}){
+    return <li className="grow text-center flex justify-center text-neutral-600"><Link className="text-4xl block p-5" href={url}>{children}</Link></li>
 }

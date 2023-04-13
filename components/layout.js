@@ -15,7 +15,7 @@ export default function Layout({children, title}){
     <main className="p-4">
         {children}
     </main>
-    <footer className="fixed bg-amber-100 glass w-full bottom-0">
+    <footer className="bg-amber-100 hidden w-full bottom-0">
         <ul className="flex justify-center">
             <ListItem url={'#'}><FiInstagram className="text-2xl"/></ListItem>
             <ListItem url={'#'}><FiTwitter className="text-2xl"/></ListItem>
@@ -28,5 +28,5 @@ export default function Layout({children, title}){
 }
 
 function ListItem({children, url}){
-    return <li className="grow text-center flex justify-center text-neutral-600"><Link className="text-4xl block p-4" href={url}>{children}</Link></li>
+    return <li className="grow text-center flex justify-center text-neutral-600"><Link className="text-4xl block p-5" href={url}>{children}</Link></li>
 }
