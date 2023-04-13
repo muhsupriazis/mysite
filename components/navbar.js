@@ -22,16 +22,23 @@ export default function Navbar(){
                 {site?.navigasi?.map((nav, i)=> <ListItem key={i} url={nav.url}>{nav.menu}</ListItem>)}
             </ul>
             <hr className="my-4"/>
+            <ul className="flex justify-center gap-4 py-4">
+                <li><Link href={'#'}><FiInstagram className="text-xl"/></Link></li>
+                <li><Link href={'#'}><FiTwitter className="text-xl"/></Link></li>
+                <li><Link href={'#'}><FiFacebook className="text-xl"/></Link></li>
+                <li><Link href={'#'}><FiLinkedin className="text-xl"/></Link></li>
+                <li><Link href={'#'}><FiGithub className="text-xl"/></Link></li>
+            </ul>
         </div>
     </nav>
     {!isactive && 
-    <div className="bg-amber-100 fixed w-full bottom-0 left-0">
+    <div className="bg-amber-50 fixed w-full bottom-0 left-0">
         <ul className="flex justify-center">
-            <ListSocial url={'#'}><FiInstagram className="text-2xl"/></ListSocial>
-            <ListSocial url={'#'}><FiTwitter className="text-2xl"/></ListSocial>
-            <ListSocial url={'#'}><FiFacebook className="text-2xl"/></ListSocial>
-            <ListSocial url={'#'}><FiLinkedin className="text-2xl"/></ListSocial>
-            <ListSocial url={'#'}><FiGithub className="text-2xl"/></ListSocial>
+            <ListSocial url={'#'}><FiInstagram className="text-lg"/></ListSocial>
+            <ListSocial url={'#'}><FiTwitter className="text-lg"/></ListSocial>
+            <ListSocial url={'#'}><FiFacebook className="text-lg"/></ListSocial>
+            <ListSocial url={'#'}><FiLinkedin className="text-lg"/></ListSocial>
+            <ListSocial url={'#'}><FiGithub className="text-lg"/></ListSocial>
         </ul>
     </div>
     }
@@ -39,7 +46,7 @@ export default function Navbar(){
 }
 
 function ListItem({children, url}){
-    return <li className="py-1 text-xl">
+    return <li className="py-1 text-2xl">
         <Link href={url}>{children}</Link>
     </li>
 }
