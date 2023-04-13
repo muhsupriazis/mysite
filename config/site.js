@@ -1,7 +1,7 @@
 import { TbBrandGithub, TbBrandInstagram, TbBrandTwitter, TbBrandLinkedin, TbBrandFacebook  } from "react-icons/tb";
 
 export const site = {
-    name: 'Muhammad Supri',
+    name: 'muhsupriazis.',
     navigasi : [
         {
             menu: 'Home',
