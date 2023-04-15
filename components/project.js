@@ -1,7 +1,6 @@
 import Image from "next/image";
-import H2 from "./heading/heading2";
 import H3 from "./heading/heading3";
-import Span from "./span";
+import Tag from "./tag";
 
 export default function Project({image, title, description, tags}){
     return <div className="relative rounded-md overflow-hidden my-6">
@@ -12,7 +11,7 @@ export default function Project({image, title, description, tags}){
             <p>{description}</p>
             {tags &&
             <div className="text-black my-4 flex gap-2">
-                {tags.map((tag, i)=> <Span key={i}>{tag}</Span>)}
+                {tags.map((tag, i)=> <Tag key={i}>{tag}</Tag>)}
             </div>
             }
             </div>
