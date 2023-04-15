@@ -9,7 +9,7 @@ export default function Layout({children, title}){
     <Head>
         <title>{title? `${site.name} | ${title}` : `${site.name}`}</title>
     </Head>
-    <header>
+    <header className="relative z-20">
         <Navbar/>
     </header>
     <main className="p-4">

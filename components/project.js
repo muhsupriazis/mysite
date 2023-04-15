@@ -10,7 +10,7 @@ export default function Project({image, title, description, tags}){
             <H3>{title}</H3>
             <p>{description}</p>
             {tags &&
-            <div className="text-black my-4 flex gap-2">
+            <div className="text-black my-4 flex flex-wrap gap-2">
                 {tags.map((tag, i)=> <Tag key={i}>{tag}</Tag>)}
             </div>
             }

@@ -8,7 +8,7 @@ export default function Portfolio(){
         <div className="py-16">
             <h1 className="text-5xl py-4 font-sofiabold">Portfolio.</h1>
             <section>
-                <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus fuga facere aperiam maxime a illo quos ullam? Atque nemo blanditiis eos adipisci odit voluptatem id, voluptatibus corporis corrupti accusantium. Dolores, quas. Quod, vitae in nobis quos doloribus perferendis nulla id, veritatis dicta nam vel! Corporis nihil doloremque harum odit.</Paragraph>
+                <Paragraph>Some of the projects I have completed</Paragraph>
             </section>
             <section>
             <div>

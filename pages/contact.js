@@ -12,7 +12,7 @@ export default function Contact(){
         <div className="py-16">
             <h1 className="text-5xl py-4 font-sofiabold">Contact.</h1>
             <section>
-                <Paragraph>Get in touch or shoot me an email directly on <Span><Link href={'#'} className="font-sofiamedium">muhsupriazis@gmail.com</Link></Span>.</Paragraph>
+                <Paragraph>Get in touch or shoot me an email directly on <Span><Link href={'mailto:muhsupriazis@gmail.com'} className="font-sofiamedium">muhsupriazis@gmail.com</Link></Span>.</Paragraph>
             </section>
             <section>
                 <form>
