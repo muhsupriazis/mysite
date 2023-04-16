@@ -7,7 +7,7 @@ import { FiInstagram, FiTwitter, FiFacebook, FiLinkedin,FiGithub } from "react-i
 export default function Layout({children, title}){
     return <>
     <Head>
-        <title>{title? `${site.name} | ${title}` : `${site.name}`}</title>
+        <title>{title?  `${title} | ${site.name}`  : `${site.name}`}</title>
     </Head>
     <header className="relative z-20">
         <Navbar/>

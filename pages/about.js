@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function About(){
     return <Layout title={'About'}>
         <div className="py-16">
-        <h1 className="text-5xl py-4 font-sofiabold">About Me.</h1>
+        <h1 className="text-5xl py-4 font-sofiabold">About Me</h1>
         <section>
             <Paragraph>Currently I am still a final year student at a university in Makassar. I study a lot programming languages ​but I am more skilled at <Span><Link className="font-sofiamedium" href={'https://developer.mozilla.org/en-US/docs/Web/javascript'}>Javascript</Link></Span>, with this one programming language I can handle frontend and backend applications.</Paragraph>
         </section>

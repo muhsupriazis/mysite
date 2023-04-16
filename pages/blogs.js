@@ -8,7 +8,7 @@ export default function Blogs(){
     const blogs =[]
     return <Layout title={'Blogs'}>
         <div className="py-16">
-        <h1 className="text-5xl py-4 font-sofiabold">Blogs.</h1>
+        <h1 className="text-5xl py-4 font-sofiabold">Blogs</h1>
         {blogs.length > 0 ? <>
             <section>
                 <Paragraph>My writings and thoughts mostly in Indonesian</Paragraph>
