@@ -27,6 +27,10 @@
   src: url('sofaipro-seminbold.otf');
 }
 
+* {
+  user-select: none;
+}
+
 .glass {
   /* From https://css.glass
     border: 1px solid rgba(255, 255, 255, 0.5);

@@ -2,13 +2,12 @@ import ButtonNavigasi from "@/components/button/navigasi";
 import Layout from "@/components/layout";
 import Paragraph from "@/components/paragraph";
 import Span from "@/components/span";
-import { site } from "@/config/site";
 import Link from "next/link";
 
 export default function Home() {
   return (
    <Layout title={'Home'}>
-    <div className="min-h-screen flex justify-center flex-col">
+    <div className="h-screen md:h-auto py-16 flex justify-center flex-col">
       <div>
         <Paragraph>Hi, my name is</Paragraph>
         <h1 className="font-sofiabold text-6xl">Muhammad Supri.</h1>

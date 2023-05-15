@@ -11,7 +11,8 @@ export default function Portfolio(){
                 <Paragraph>Some of the projects I have completed</Paragraph>
             </section>
             <section>
-            <div>
+            <div className="md:grid grid-cols-2 md:gap-6 lg:gap-8">
+                <Project image={'/dinamic.jpg'} title={'Play Modules'} tags={['Javascript', 'NExtJS', 'MongoDB']} description={'Advantages of Dynamic Websites. Making the shift benefits for both your business and your target audience: 1. More personalized browsing.'}/>
                 <Project image={'/dinamic.jpg'} title={'Play Modules'} tags={['Javascript', 'NExtJS', 'MongoDB']} description={'Advantages of Dynamic Websites. Making the shift benefits for both your business and your target audience: 1. More personalized browsing.'}/>
             </div>
             </section>

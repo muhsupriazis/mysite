@@ -15,7 +15,7 @@ export default function About(){
         </section>
         <section>
             <H2>What can I develop?</H2>
-            <div>
+            <div className="md:grid grid-cols-2 md:gap-6 lg:gap-8">
                 <Project image={'/staticwebsite.jpg'} title={'Static Aplication'} tags={['Landing Page', 'Company Profile', 'Website Portfolio', 'Online Formulir', 'etc']} description={'Websites that have static content, so they only have simple code to build.'}/>
                 <Project image={'/dinamic.jpg'} title={'Dinamic Aplication'} tags={['Personal Blog', 'Web Portal', 'E-Commerce', 'E-Learning', 'etc']} description={'Websites that have dynamic content, generally have a database for data storage.'}/>
             </div>
