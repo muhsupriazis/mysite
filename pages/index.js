@@ -9,12 +9,12 @@ export default function Home() {
    <Layout title={'Home'}>
     <div className="h-screen md:h-auto py-16 flex justify-center flex-col">
       <div>
-        <Paragraph>Hi, my name is</Paragraph>
+        <Paragraph>Halo, nama saya</Paragraph>
         <h1 className="font-sofiabold text-6xl">Muhammad Supri.</h1>
-        <Paragraph>I have more than two years experience in website development, I was also an assistant frontend developer mentor in the <Span><Link className="font-sofiamedium" href={'https://www.ruangguru.com/'}>Ruang Guru</Link></Span>. I&apos;m currently studying at the <Span><Link className="font-sofiamedium" href={'https://www.dicoding.com/programs/bangkit'}>Bangkit</Link></Span> by Google, Tokopeda, and Traveloka programs.</Paragraph>
-        <Paragraph>In my spare time, working as a freelancer, I write a blog and also work on projects. You can see some of my <Span><Link className="font-sofiamedium" href={'/portfolio'}>portfolios</Link></Span>, and if interested in working together please <Span><Link className="font-sofiamedium" href={'/contact'}>contact me!</Link></Span></Paragraph>
+        <Paragraph>Saya memiliki pengalaman 2+ tahun di Web Development, Saya juga pernah menjadi asisten mentor pada program MSIB di <Span><Link className="font-sofiamedium" href={'https://www.ruangguru.com/'}>Ruang Guru</Link></Span>. Sekarang saya belajar Cloud Computing di program <Span><Link className="font-sofiamedium" href={'https://www.dicoding.com/programs/bangkit'}>Bangkit</Link></Span> oleh Google, Tokopeda, and Traveloka.</Paragraph>
+        <Paragraph>Diwaktu luang saya bekerja sebagai Freelance Web Development, Saya juga kadang menulis artikel kalian bisa membacanya di bagian Blog dan kalian juga bisa melihat <Span><Link className="font-sofiamedium" href={'/portfolio'}>portofolio</Link></Span> yang telah saya buat, jika tertarik jangan sungkan untuk <Span><Link className="font-sofiamedium" href={'/contact'}>hubungi saya!</Link></Span></Paragraph>
       </div>
-      <ButtonNavigasi url={'/about'}>See More About Me</ButtonNavigasi>
+      <ButtonNavigasi url={'/about'}>Selengkapnya tentang saya</ButtonNavigasi>
     </div>
    </Layout>
   )

@@ -22,7 +22,7 @@ export default function Blogs(){
             </section>
         </> : <Empty>There are no published blogs</Empty>
         }
-        <ButtonNavigasi url={'/portfolio'}>Lets Continue To Projects</ButtonNavigasi>
+        <ButtonNavigasi url={'/portfolio'}>Yang pernah saya Buat</ButtonNavigasi>
         </div>
     </Layout>
 }

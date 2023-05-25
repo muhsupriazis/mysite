@@ -11,16 +11,16 @@ export default function About(){
         <div className="py-16">
         <h1 className="text-5xl py-4 font-sofiabold">About Me</h1>
         <section>
-            <Paragraph>Currently I am still a final year student at a university in Makassar. I study a lot programming languages ​but I am more skilled at <Span><Link className="font-sofiamedium" href={'https://developer.mozilla.org/en-US/docs/Web/javascript'}>Javascript</Link></Span>, with this one programming language I can handle frontend and backend applications.</Paragraph>
+            <Paragraph>Saat ini saya seorang mahasiswa akhir di Universitas Handayani Makassar. Saya belajar banyak bahasa pembrograman, tapi saya lebih bangga mengatakan saya bisa <Span><Link className="font-sofiamedium" href={'https://developer.mozilla.org/en-US/docs/Web/javascript'}>Javascript</Link></Span>, dengan bahasa ini saya bisa membuat aplikasi backend dan frontend.</Paragraph>
         </section>
         <section>
             <H2>What can I develop?</H2>
             <div className="md:grid grid-cols-2 md:gap-6 lg:gap-8">
-                <Project image={'/staticwebsite.jpg'} title={'Static Aplication'} tags={['Landing Page', 'Company Profile', 'Website Portfolio', 'Online Formulir', 'etc']} description={'Websites that have static content, so they only have simple code to build.'}/>
-                <Project image={'/dinamic.jpg'} title={'Dinamic Aplication'} tags={['Personal Blog', 'Web Portal', 'E-Commerce', 'E-Learning', 'etc']} description={'Websites that have dynamic content, generally have a database for data storage.'}/>
+                <Project image={'/staticwebsite.jpg'} title={'Static Aplication'} tags={['Landing Page', 'Company Profile', 'Website Portfolio', 'Online Formulir', 'etc']} description={'Website dengan halaman yang tetap, tidak memiliki aplikasi backend yang kompleks.'}/>
+                <Project image={'/dinamic.jpg'} title={'Dinamic Aplication'} tags={['Personal Blog', 'Web Portal', 'E-Commerce', 'E-Learning', 'etc']} description={'Website dengan halama yang dinamis, umumnya memiliki database dan fitur create, read, update dan delete.'}/>
             </div>
         </section>
-        <ButtonNavigasi url={'/blogs'}>Something I once wrote</ButtonNavigasi>
+        <ButtonNavigasi url={'/blogs'}>Artikel yang saya tulis</ButtonNavigasi>
         </div>
     </Layout>
 }
